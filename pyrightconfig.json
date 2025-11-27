@@ -1,0 +1,12 @@
+{
+  "venvPath": "/opt/miniconda3/envs",
+  "venv": "variant_dynamics_zenodo",
+  "include": ["origins_of_the_fittest"],
+  "exclude": ["**/node_modules", "**/__pycache__", "**/.*", "build", "dist"],
+  "ignore": [],
+  "typeCheckingMode": "basic",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "pythonVersion": "3.11",
+  "pythonPlatform": "All"
+}

@@ -1,0 +1,14 @@
+numpy>=1.23
+pandas>=2.0
+polars>=1.0
+networkx>=3.4.2
+scipy>=1.14.1
+pyarrow>=17.0.0
+altair>=5.4.1
+ipykernel>=6.29.5
+ipython>=8.28.0
+jupyter>=1.1.1
+multiprocess>=0.70.17
+pytest>=8.4.1
+pyright>=1.1.385
+gitpython>=3.1.43

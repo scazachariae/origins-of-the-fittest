@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "origins-of-the-fittest"
+version = "1.0.0"
+authors = [{ name = "Adrian Zachariae", email = "scazachariae@gmail.com" }]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=2.0",
+    "polars>=1.0",
+    "networkx>=3.4.2",
+    "scipy>=1.14.1",
+    "pyarrow>=17.0.0",
+    "altair>=5.4.1",
+    "ipykernel>=6.29.5",
+    "ipython>=8.28.0",
+    "jupyter>=1.1.1",
+    "multiprocess>=0.70.17",
+    "pytest>=8.4.1",
+    "pyright>=1.1.385",
+    "gitpython>=3.1.43"
+]
+
+[project.urls]
+Repository = "https://github.com/scazachariae/origins_of_the_fittest"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"origins_of_the_fittest" = [
+    "data/*.parquet",
+    "data/test/*",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["origins_of_the_fittest*"]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not stochastic'"
+markers = [
+    "stochastic: long-running or probabilistic tests that are skipped by default",
+]
+filterwarnings = [
+    "ignore::altair.utils.deprecation.AltairDeprecationWarning",
+]
