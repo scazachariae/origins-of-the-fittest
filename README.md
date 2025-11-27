@@ -110,4 +110,4 @@ Published under the MIT License (see [`LICENSE`](LICENSE)).
 
 ## Repository
 
-GitHub mirror: <https://github.com/scazachariae/origins_of_the_fittest>
+GitHub mirror: <https://github.com/scazachariae/origins-of-the-fittest>
