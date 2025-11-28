@@ -1,6 +1,6 @@
 {
   "venvPath": "/opt/miniconda3/envs",
-  "venv": "variant_dynamics_zenodo",
+  "venv": "origins_of_the_fittest",
   "include": ["origins_of_the_fittest"],
   "exclude": ["**/node_modules", "**/__pycache__", "**/.*", "build", "dist"],
   "ignore": [],
